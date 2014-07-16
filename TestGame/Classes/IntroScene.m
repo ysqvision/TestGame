@@ -39,7 +39,7 @@
     [self addChild:background];
     
     // Game Title
-    CCLabelTTF *label = [CCLabelTTF labelWithString:@"FaceSlapper" fontName:@"Chalkduster" fontSize:36.0f];
+    CCLabelTTF *label = [CCLabelTTF labelWithString:@"FaceSlapper v2.0" fontName:@"Chalkduster" fontSize:36.0f];
     label.positionType = CCPositionTypeNormalized;
     label.color = [CCColor redColor];
     label.position = ccp(0.5f, 0.5f); // Middle of screen

@@ -9,7 +9,7 @@
 
 // Import the interfaces
 #import "IntroScene.h"
-#import "HelloWorldScene.h"
+#import "MainGameScene.h"
 
 // -----------------------------------------------------------------------
 #pragma mark - IntroScene
@@ -38,19 +38,27 @@
     CCNodeColor *background = [CCNodeColor nodeWithColor:[CCColor colorWithRed:0.2f green:0.2f blue:0.2f alpha:1.0f]];
     [self addChild:background];
     
-    // Hello world
-    CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Chalkduster" fontSize:36.0f];
+    // Game Title
+    CCLabelTTF *label = [CCLabelTTF labelWithString:@"FaceSlapper" fontName:@"Chalkduster" fontSize:36.0f];
     label.positionType = CCPositionTypeNormalized;
     label.color = [CCColor redColor];
     label.position = ccp(0.5f, 0.5f); // Middle of screen
     [self addChild:label];
     
-    // Helloworld scene button
-    CCButton *helloWorldButton = [CCButton buttonWithTitle:@"[ Start ]" fontName:@"Verdana-Bold" fontSize:18.0f];
-    helloWorldButton.positionType = CCPositionTypeNormalized;
-    helloWorldButton.position = ccp(0.5f, 0.35f);
-    [helloWorldButton setTarget:self selector:@selector(onSpinningClicked:)];
-    [self addChild:helloWorldButton];
+    // Freestyle Button
+    CCButton *freestyleButton = [CCButton buttonWithTitle:@"Freestyle" fontName:@"Verdana-Bold" fontSize:18.0f];
+    freestyleButton.positionType = CCPositionTypeNormalized;
+    freestyleButton.position = ccp(0.5f, 0.35f);
+    [freestyleButton setTarget:self selector:@selector(onSpinningClicked:)];
+    [self addChild:freestyleButton];
+    
+    // Ranking Button
+    CCButton *rankingButton = [CCButton buttonWithTitle:@"Ranking Game" fontName:@"Verdana-Bold" fontSize:18.0f];
+    rankingButton.positionType = CCPositionTypeNormalized;
+    rankingButton.position = ccp(0.5f, 0.3f);
+    [rankingButton setTarget:self selector:@selector(onSpinningClicked:)];
+    [self addChild:rankingButton];
+
 
     // done
 	return self;
@@ -63,7 +71,7 @@
 - (void)onSpinningClicked:(id)sender
 {
     // start spinning scene with transition
-    [[CCDirector sharedDirector] replaceScene:[HelloWorldScene scene]
+    [[CCDirector sharedDirector] replaceScene:[MainGameScene scene]
                                withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionLeft duration:1.0f]];
 }
 

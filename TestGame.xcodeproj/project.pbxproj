@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		706C77D61976110E008C1129 /* face_slap_sound_effect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 706C77D41976110E008C1129 /* face_slap_sound_effect.wav */; };
+		706C77D71976110E008C1129 /* mama.png in Resources */ = {isa = PBXBuildFile; fileRef = 706C77D51976110E008C1129 /* mama.png */; };
 		70F9CDC019759ACA00324971 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F9CDBF19759ACA00324971 /* QuartzCore.framework */; };
 		70F9CDC219759ACA00324971 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F9CDC119759ACA00324971 /* OpenGLES.framework */; };
 		70F9CDC419759ACA00324971 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F9CDC319759ACA00324971 /* OpenAL.framework */; };
@@ -18,7 +20,6 @@
 		70F9CDD019759ACA00324971 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F9CDCF19759ACA00324971 /* CoreText.framework */; };
 		70F9CDD219759ACA00324971 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F9CDD119759ACA00324971 /* GLKit.framework */; };
 		70F9CDD819759ACA00324971 /* libObjectiveChipmunk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F9CDD519759ACA00324971 /* libObjectiveChipmunk.a */; };
-		70F9CDDC19759ACA00324971 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 70F9CDDB19759ACA00324971 /* Default.png */; };
 		70F9CDDE19759ACA00324971 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70F9CDDD19759ACA00324971 /* Default@2x.png */; };
 		70F9CDE019759ACA00324971 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70F9CDDF19759ACA00324971 /* Default-568h@2x.png */; };
 		70F9CDE219759ACA00324971 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 70F9CDE119759ACA00324971 /* Default-Landscape~ipad.png */; };
@@ -202,6 +203,9 @@
 		70F9D03B19759ACC00324971 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F9D03A19759ACC00324971 /* AppDelegate.m */; };
 		70F9D03E19759ACC00324971 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F9D03D19759ACC00324971 /* HelloWorldScene.m */; };
 		70F9D04119759ACC00324971 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F9D04019759ACC00324971 /* IntroScene.m */; };
+		70F9D04F19759FBC00324971 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F9D04E19759FBC00324971 /* Images.xcassets */; };
+		70F9D0561975A2D800324971 /* MainGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F9D0551975A2D800324971 /* MainGameScene.m */; };
+		70F9D2F31975B45400324971 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F9D2F21975B45400324971 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +219,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		706C77D41976110E008C1129 /* face_slap_sound_effect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = face_slap_sound_effect.wav; path = Resources/face_slap_sound_effect.wav; sourceTree = "<group>"; };
+		706C77D51976110E008C1129 /* mama.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mama.png; path = Resources/mama.png; sourceTree = "<group>"; };
 		70F9CDBC19759ACA00324971 /* TestGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F9CDBF19759ACA00324971 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		70F9CDC119759ACA00324971 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -227,7 +233,6 @@
 		70F9CDCF19759ACA00324971 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		70F9CDD119759ACA00324971 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		70F9CDD519759ACA00324971 /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjectiveChipmunk.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		70F9CDDB19759ACA00324971 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
 		70F9CDDD19759ACA00324971 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
 		70F9CDDF19759ACA00324971 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
 		70F9CDE119759ACA00324971 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "Resources/Default-Landscape~ipad.png"; sourceTree = "<group>"; };
@@ -613,6 +618,10 @@
 		70F9D03D19759ACC00324971 /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
 		70F9D03F19759ACC00324971 /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
 		70F9D04019759ACC00324971 /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
+		70F9D04E19759FBC00324971 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		70F9D0541975A2D800324971 /* MainGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainGameScene.h; sourceTree = "<group>"; };
+		70F9D0551975A2D800324971 /* MainGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainGameScene.m; sourceTree = "<group>"; };
+		70F9D2F21975B45400324971 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -620,6 +629,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F9D2F31975B45400324971 /* CoreMotion.framework in Frameworks */,
 				70F9CDC419759ACA00324971 /* OpenAL.framework in Frameworks */,
 				70F9CDCA19759ACA00324971 /* UIKit.framework in Frameworks */,
 				70F9CDC019759ACA00324971 /* QuartzCore.framework in Frameworks */,
@@ -658,6 +668,7 @@
 		70F9CDBE19759ACA00324971 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70F9D2F21975B45400324971 /* CoreMotion.framework */,
 				70F9CDBF19759ACA00324971 /* QuartzCore.framework */,
 				70F9CDC119759ACA00324971 /* OpenGLES.framework */,
 				70F9CDC319759ACA00324971 /* OpenAL.framework */,
@@ -678,6 +689,7 @@
 				70F9CDDA19759ACA00324971 /* Resources */,
 				70F9CE0319759ACA00324971 /* Libraries */,
 				70F9D03819759ACC00324971 /* Classes */,
+				70F9D04E19759FBC00324971 /* Images.xcassets */,
 				70F9D03419759ACC00324971 /* Supporting Files */,
 			);
 			path = TestGame;
@@ -686,7 +698,8 @@
 		70F9CDDA19759ACA00324971 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				70F9CDDB19759ACA00324971 /* Default.png */,
+				706C77D41976110E008C1129 /* face_slap_sound_effect.wav */,
+				706C77D51976110E008C1129 /* mama.png */,
 				70F9CDDD19759ACA00324971 /* Default@2x.png */,
 				70F9CDDF19759ACA00324971 /* Default-568h@2x.png */,
 				70F9CDE119759ACA00324971 /* Default-Landscape~ipad.png */,
@@ -1425,6 +1438,8 @@
 			children = (
 				70F9D03919759ACC00324971 /* AppDelegate.h */,
 				70F9D03A19759ACC00324971 /* AppDelegate.m */,
+				70F9D0541975A2D800324971 /* MainGameScene.h */,
+				70F9D0551975A2D800324971 /* MainGameScene.m */,
 				70F9D03C19759ACC00324971 /* HelloWorldScene.h */,
 				70F9D03D19759ACC00324971 /* HelloWorldScene.m */,
 				70F9D03F19759ACC00324971 /* IntroScene.h */,
@@ -1506,16 +1521,17 @@
 				70F9CDE719759ACA00324971 /* Icon@2x.png in Resources */,
 				70F9CDF919759ACA00324971 /* Icon-Small@2x.png in Resources */,
 				70F9CDEB19759ACA00324971 /* Icon-72@2x.png in Resources */,
-				70F9CDDC19759ACA00324971 /* Default.png in Resources */,
 				70F9CDE519759ACA00324971 /* Icon.png in Resources */,
 				70F9CDF319759ACA00324971 /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
 				70F9CDE219759ACA00324971 /* Default-Landscape~ipad.png in Resources */,
+				70F9D04F19759FBC00324971 /* Images.xcassets in Resources */,
 				70F9CDF719759ACA00324971 /* Icon-Small.png in Resources */,
 				70F9CDF519759ACA00324971 /* Icon-Small-50.png in Resources */,
 				70F9D03319759ACC00324971 /* LICENSE_Chipmunk.txt in Resources */,
 				70F9CDE919759ACA00324971 /* Icon-72.png in Resources */,
 				70F9CFC519759ACC00324971 /* LICENSE_CCBReader.txt in Resources */,
 				70F9CF3519759ACB00324971 /* LICENSE_cocos2d.txt in Resources */,
+				706C77D61976110E008C1129 /* face_slap_sound_effect.wav in Resources */,
 				70F9CDE019759ACA00324971 /* Default-568h@2x.png in Resources */,
 				70F9CE0019759ACA00324971 /* iTunesArtwork in Resources */,
 				70F9CDFB19759ACA00324971 /* Icon-Spotlight-iOS7.png in Resources */,
@@ -1523,6 +1539,7 @@
 				70F9CDFD19759ACA00324971 /* Icon-Spotlight-iOS7@2x.png in Resources */,
 				70F9CDED19759ACA00324971 /* Icon-76.png in Resources */,
 				70F9CE0219759ACA00324971 /* iTunesArtwork@2x in Resources */,
+				706C77D71976110E008C1129 /* mama.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1596,6 +1613,7 @@
 				70F9CEA219759ACB00324971 /* CCPhysicsNode.m in Sources */,
 				70F9CF4419759ACB00324971 /* OALUtilityActions.m in Sources */,
 				70F9CE7C19759ACB00324971 /* CCMotionStreak.m in Sources */,
+				70F9D0561975A2D800324971 /* MainGameScene.m in Sources */,
 				70F9CF8619759ACC00324971 /* NSMutableArray+WeakReferences.m in Sources */,
 				70F9CF7419759ACC00324971 /* OpenALManager.m in Sources */,
 				70F9CEE419759ACB00324971 /* CCTMXXMLParser.m in Sources */,
@@ -1795,8 +1813,10 @@
 		70F9D04819759ACC00324971 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1806,6 +1826,7 @@
 					"\"$(SRCROOT)/$(PROJECT_NAME)/Libraries/Chipmunk/objectivec/include\"",
 				);
 				INFOPLIST_FILE = TestGame/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -1819,8 +1840,10 @@
 		70F9D04919759ACC00324971 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestGame/Supporting Files/Prefix.pch";
@@ -1829,6 +1852,7 @@
 					"\"$(SRCROOT)/$(PROJECT_NAME)/Libraries/Chipmunk/objectivec/include\"",
 				);
 				INFOPLIST_FILE = TestGame/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -1859,6 +1883,7 @@
 				70F9D04619759ACC00324971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70F9D04719759ACC00324971 /* Build configuration list for PBXNativeTarget "TestGame" */ = {
 			isa = XCConfigurationList;
@@ -1867,6 +1892,7 @@
 				70F9D04919759ACC00324971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

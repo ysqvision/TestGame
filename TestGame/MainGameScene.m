@@ -74,7 +74,6 @@
                                                          readyToSlap = true;
                                                      }
                                                  }
-                                                 
                                                  if (readyToSlap) {
                                                      NSLog(@"inside ready to slap");
                                                      if (fabs(zAcce) > 0.2) {
@@ -91,7 +90,6 @@
                                                      NSLog(@"%@", error);
                                                  }
                                              }];
-     
     
     // done
 	return self;

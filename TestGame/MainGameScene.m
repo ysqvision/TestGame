@@ -62,36 +62,38 @@
     __block BOOL readyToSlap = true;
     __block BOOL previousDirection = true;
     self.motionManager = [[CMMotionManager alloc] init];
-    self.motionManager.accelerometerUpdateInterval = .2;
-    [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue]
-                                             withHandler:^(CMAccelerometerData  *accelerometerData, NSError *error) {
-                                                 double zAcce = accelerometerData.acceleration.z;
-                                                 NSLog(@"%f", zAcce);
-                                                 if (!readyToSlap) {
-                                                     BOOL currentDirection = (zAcce >= 0);
-                                                     if (currentDirection != previousDirection) {
-                                                         previousDirection = currentDirection;
-                                                         readyToSlap = true;
-                                                     }
-                                                 }
-                                                 if (readyToSlap) {
-                                                     NSLog(@"inside ready to slap");
-                                                     if (fabs(zAcce) > 0.2) {
-                                                         
-                                                         readyToSlap = false;
-                                                         [_sprite runAction:[CCActionRepeatForever actionWithAction:actionSpin]];
-                                                         AudioServicesPlaySystemSound(self.faceSlapSound);
-                                                         NSLog(@"slapped!!");
-                                                         previousDirection = (zAcce >= 0);
-                                                        
-                                                     }
-                                                 }
-                                                 if(error){
-                                                     NSLog(@"%@", error);
-                                                 }
-                                             }];
-    
-    // done
+    self.motionManager.deviceMotionUpdateInterval = .2;
+    [self.motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMDeviceMotion *motion, NSError *error) {
+        
+        //user acceleration
+        double zAcce = motion.userAcceleration.z;
+        
+        NSLog(@"Z Accer = %f", zAcce);
+        if (!readyToSlap) {
+            BOOL currentDirection = (zAcce >= 0);
+            if (currentDirection != previousDirection) {
+                previousDirection = currentDirection;
+                readyToSlap = true;
+            }
+        }
+        if (readyToSlap) {
+            NSLog(@"inside ready to slap");
+            if (fabs(zAcce) > 0.2) {
+                
+                readyToSlap = false;
+                [_sprite runAction:[CCActionRepeatForever actionWithAction:actionSpin]];
+                AudioServicesPlaySystemSound(self.faceSlapSound);
+                NSLog(@"slapped!!");
+                previousDirection = (zAcce >= 0);
+                
+            }
+        }
+        if(error){
+            NSLog(@"%@", error);
+        }
+    }];
+
+    //done
 	return self;
 }
 

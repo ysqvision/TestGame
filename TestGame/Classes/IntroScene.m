@@ -10,6 +10,7 @@
 // Import the interfaces
 #import "IntroScene.h"
 #import "MainGameScene.h"
+#import "Mosquito.h"
 
 // -----------------------------------------------------------------------
 #pragma mark - IntroScene
@@ -58,6 +59,13 @@
     rankingButton.position = ccp(0.5f, 0.3f);
     [rankingButton setTarget:self selector:@selector(onSpinningClicked:)];
     [self addChild:rankingButton];
+    
+    // Mosquito Button
+    CCButton *mosButton = [CCButton buttonWithTitle:@"Mosquito" fontName:@"Verdana-Bold" fontSize:18.0f];
+    mosButton.positionType = CCPositionTypeNormalized;
+    mosButton.position = ccp(0.5f, 0.25f);
+    [mosButton setTarget:self selector:@selector(onSpinningClicked2:)];
+    [self addChild:mosButton];
 
 
     // done
@@ -72,6 +80,13 @@
 {
     // start spinning scene with transition
     [[CCDirector sharedDirector] replaceScene:[MainGameScene scene]
+                               withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionLeft duration:1.0f]];
+}
+
+- (void)onSpinningClicked2:(id)sender
+{
+    // start spinning scene with transition
+    [[CCDirector sharedDirector] replaceScene:[Mosquito scene]
                                withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionLeft duration:1.0f]];
 }
 
